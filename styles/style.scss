@@ -1,0 +1,72 @@
+// imports
+
+@import "./mixins";
+
+// Algemene CSS
+
+body {
+    margin: 0 auto;
+}
+
+h1 {
+    position: absolute;
+    left: 50%;
+}
+
+.colour-picker {
+    width: 300px;
+}
+
+.colour-menu {
+    display:flex;
+    flex-direction: column;
+    list-style-type: none;
+    width: 300px;
+    padding-left: 0px;
+    font-size: 30px;
+    row-gap: 2px;
+    transform: translateX(-300px);
+    transition: transform 0.5s;
+    &__home {
+        background-color: $colour-home;
+        @include background-list-styling();
+    }
+    &__red {
+        background-color: $colour-red;
+        @include background-list-styling();
+    }
+    &__orange {
+        background-color: $colour-orange;
+        @include background-list-styling();
+    }
+    &__purple {
+        background-color: $colour-purple;
+        @include background-list-styling();
+    }
+    &__green {
+        background-color: $colour-green;
+        @include background-list-styling();
+    }
+}
+
+// Toe te voegen CSS met JS
+
+.menu-hover-animation{
+    transform: translateX(0px);
+}
+
+.home-background {
+    background-color: $colour-home;
+}
+.red-background {
+    background-color: $colour-red;
+}
+.orange-background {
+    background-color: $colour-orange;
+}
+.purple-background {
+    background-color: $colour-purple;
+}
+.green-background {
+    background-color: $colour-green;
+}

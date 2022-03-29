@@ -1,0 +1,84 @@
+body {
+  margin: 0 auto;
+}
+
+h1 {
+  position: absolute;
+  left: 50%;
+}
+
+.colour-picker {
+  width: 300px;
+}
+
+.colour-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style-type: none;
+  width: 300px;
+  padding-left: 0px;
+  font-size: 30px;
+  row-gap: 2px;
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.colour-menu__home {
+  background-color: darkgray;
+  padding: 20px;
+}
+
+.colour-menu__red {
+  background-color: red;
+  padding: 20px;
+}
+
+.colour-menu__orange {
+  background-color: orange;
+  padding: 20px;
+}
+
+.colour-menu__purple {
+  background-color: purple;
+  padding: 20px;
+}
+
+.colour-menu__green {
+  background-color: green;
+  padding: 20px;
+}
+
+.menu-hover-animation {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.home-background {
+  background-color: darkgray;
+}
+
+.red-background {
+  background-color: red;
+}
+
+.orange-background {
+  background-color: orange;
+}
+
+.purple-background {
+  background-color: purple;
+}
+
+.green-background {
+  background-color: green;
+}
+/*# sourceMappingURL=style.css.map */

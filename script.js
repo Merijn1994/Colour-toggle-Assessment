@@ -39,6 +39,7 @@ const changeHomeBackgroundColour = function () {
     bodyElement.classList.remove("green-background");
     bodyElement.classList.add("home-background");
     document.getElementById("colour-name").innerHTML = "Home";
+    document.getElementById("radio-home").checked = true;
 }
 
 const changeRedBackgroundColour = function () {
@@ -49,6 +50,7 @@ const changeRedBackgroundColour = function () {
     bodyElement.classList.remove("green-background");
     bodyElement.classList.add("red-background");
     document.getElementById("colour-name").innerHTML = "Red";
+    document.getElementById("radio-red").checked = true;
 }
 
 const changeOrangeBackgroundColour = function () {
@@ -59,6 +61,7 @@ const changeOrangeBackgroundColour = function () {
     bodyElement.classList.remove("green-background");
     bodyElement.classList.add("orange-background");
     document.getElementById("colour-name").innerHTML = "Orange";
+    document.getElementById("radio-orange").checked = true;
 }
 
 const changePurpleBackgroundColour = function () {
@@ -69,6 +72,7 @@ const changePurpleBackgroundColour = function () {
     bodyElement.classList.remove("green-background");
     bodyElement.classList.add("purple-background");
     document.getElementById("colour-name").innerHTML = "Purple";
+    document.getElementById("radio-purple").checked = true;
 }
 
 const changeGreenBackgroundColour = function () {
@@ -79,6 +83,7 @@ const changeGreenBackgroundColour = function () {
     bodyElement.classList.remove("purple-background");
     bodyElement.classList.add("green-background");
     document.getElementById("colour-name").innerHTML = "Green";
+    document.getElementById("radio-green").checked = true;
 }
 
 // Applying the changes on the menu
